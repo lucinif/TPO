@@ -1,0 +1,227 @@
+* {
+    /* margin: 2px; */
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+body {
+    /* margin: 5px; */
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-rows: 0.25fr 2fr 0.25fr;
+    background-color: white;
+    gap: 5px;
+    min-height: 100vh;
+    width: auto;
+    /* justify-self: auto; */
+    /* justify-items: center; */
+    /* align-items: center; */
+
+}
+
+header {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 1/4;
+    align-items: center;
+    /* width: fit-content; */
+    min-width: 100%;
+    justify-items: center;
+    height: max-content;
+    /* max-height: fit-content; */
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 5px;
+}
+
+.header-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    /* padding: 10px; */
+}
+a:hover {
+    color: red;
+}
+
+.header-nav {
+    width: 100%;
+    margin: 5px;
+    /* display: flex; */
+    /* place-items: center; */
+}
+
+.header-nav ul {
+    list-style: none;
+    /* background-color: red; */
+    padding: 0.5rem; /* deja el texto con margen abajo haciendo que se LEVANTE */ 
+    /* margin: 1vh; */
+    display: grid;
+    gap: 5px; /* separar en link1... */
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2/3;
+    text-align: center;
+    /* place-content: center; */
+}
+.header-nav li {
+    background-color: white;
+    /*padding: 0.5rem; */ /* al ocultar esto y dejar pad en li se mueve hacia ABAJO al pasar */
+}
+.header-nav li:hover {
+    /*padding: 0.5rem 0 0 0; /* al pasar cambia el padding de ul a este */
+    background-color: grey;
+}
+
+main { 
+    color: black;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-column: 1/2;
+    /* margin: 5px; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+    max-height: fit-content;
+    gap: 20px;
+}
+
+main article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    /* recuadro para hover */
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    background-size: cover;
+    /* box-shadow: 3px 5px 5px rgba(3, 32, 51, 8); */
+    
+
+    
+}
+
+.Main-visual {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    place-items: center;
+    height: auto;
+ 
+}
+.Main-text {
+    background-color: rgba(54, 54, 54, 0.600);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: white;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+main article:hover .Main-text {
+    opacity: 1;
+}
+
+.Main-text a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.Main-text a:hover {
+    color: red;
+}
+
+.Main-img {
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: fit-content;
+    border-radius: 5px;
+    
+}
+
+
+
+aside article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: whitesmoke;
+    border-radius: 5px;
+
+}
+
+.aside-visual {
+    display: flex;
+    justify-content: center; /* centrar h*/
+    align-items: center; /* centrar v*/
+    gap: 5px;
+}
+
+.aside-text {
+    margin-left: 5px;
+}
+
+.aside-img {
+width: auto;
+height: auto;
+max-width: 100px;
+max-height: 100px;
+
+}
+
+aside {
+    color: black;
+    display: grid;
+    text-align: left;
+    /* content centra el bloque todo tal cual esta en vertical */
+    /* place-content: center; */
+    /* item centra todos los items por separado a la misma distancia*/
+    /* place-items: center; */
+    grid-column: 2/4;
+    grid-row: 2/3;
+    /* border-radius: 5px; */
+    margin: 5px;
+    /* gap: 5px; */
+}
+
+
+
+footer {
+    color: black;
+    display: grid;
+    background-color: whitesmoke;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    /* place-content: center; */
+    place-items: center;
+    align-items: center;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    border-radius: 5px;
+    margin: 5px;
+    gap: 5px;
+}
+
+
