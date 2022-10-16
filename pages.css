@@ -83,6 +83,7 @@ main {
     align-items: center;
     max-width: max-content;
     max-height: fit-content;
+    background-color: whitesmoke;
 }
 
 main article {
@@ -97,22 +98,81 @@ main article {
  
 }
 
+
 aside {
-    color: black;
-    display: grid;
-    text-align: left;
+    display: grid;   
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column: 2/4;
     grid-row: 2/3;
     margin: 5px;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background: whitesmoke;
+
 }
 
-aside article {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: whitesmoke;
-    border-radius: 5px;
+.container {
+    display: flex;
+}
 
+.card {
+    height: 300px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.card img {
+    height: 300px;
+    width: 350px;
+    border-radius: 30px;
+}
+
+.intro  {
+    height: 100px;
+    width: 350px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 100px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+}
+
+.intro h1 {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.intro p {
+    margin: 20px;
+    font-size: 18px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card :hover {
+    cursor: pointer;
+}
+
+.card:hover .intro {
+    height: 250px;
+    bottom: 250px;
+    background: lightseagreen;
+
+}
+
+
+.card:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 footer {
