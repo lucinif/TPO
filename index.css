@@ -15,17 +15,16 @@ body {
 
 header {
     display: grid;
-    background-color: black;
+    /* background-color: lightskyblue; */
     grid-template-columns: 0.2fr 1fr;
     grid-template-rows: 1fr;
     grid-column: 1/4;
     align-items: center;
-    /* width: fit-content; */
     min-width: 100%;
     justify-items: center;
     height: 95%;
-    /* margin-bottom: 10px; */
-    /* max-height: fit-content; */
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 .header-logo {
@@ -33,9 +32,6 @@ header {
     align-items: center;
     justify-content: left;
     padding: 5px;
-    /* max-width: fit-content;
-    max-height: fit-content;
-    margin: 0px; */
 }
 
 .header-img {
@@ -46,7 +42,6 @@ header {
  nav a {
     text-decoration: none;
     color: black;
-    /* padding: 10px; */
 }
 
 a:hover {
@@ -66,11 +61,11 @@ a:hover {
 }
 .header-nav li {
     margin-right: 10px;
-    background-color: white;
+    background-color: lightblue;
 }
 .header-nav li:hover {
    /* padding: 5px; /* al pasar cambia el padding de ul a este */
-    background-color: grey;
+    background-color: white;
 }
 
 main { 
@@ -103,6 +98,8 @@ main article {
     display: grid;
     place-items: center;
     height: auto;
+    box-shadow: 2px 2px 6px black;
+    border-radius: 5px;
  
 }
 .Main-text {
@@ -185,7 +182,7 @@ max-height: 100px;
 footer {
     color: black;
     display: grid;
-    background-color: whitesmoke;
+    background-color: lightskyblue;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     place-items: center;
@@ -193,6 +190,7 @@ footer {
     grid-row: 3/4;
     border-radius: 5px;
     height:95%;
+    font-style: italic;
 }
 
 .footer-list ul {
@@ -211,6 +209,11 @@ footer {
 footer a {
     text-decoration: none;
     color: black;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 .footer-logo {
