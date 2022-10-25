@@ -529,7 +529,12 @@ footer a {
         font-size: 12px;
         justify-self: center;
         text-align: center;
-        padding: 5px;
+        padding: 0.75rem;
+    }
+
+    .icon-list img {
+        height: 40px;
+        width: 40px;
     }
 
     footer {
