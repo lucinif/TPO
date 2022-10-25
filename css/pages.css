@@ -526,7 +526,10 @@ footer a {
     }
 
     .icon-list a {
-        font-size: 10px;
+        font-size: 12px;
+        justify-self: center;
+        text-align: center;
+        padding: 5px;
     }
 
     footer {
