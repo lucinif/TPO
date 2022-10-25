@@ -172,7 +172,7 @@ main {
 .card a {
         text-decoration: none;
 }
-/* articulo najo las tarjetas  */
+/* articulo bajo las tarjetas  */
 article {
     display: grid;
     grid-template-columns: 1fr;
@@ -376,7 +376,7 @@ footer a {
         gap: 5px;
         max-height: 100vh;
         width: auto;
-        min-width: auto;
+        min-width: 500px;
     }
 
     main {
@@ -507,7 +507,8 @@ footer a {
 
     .article-text {
         font-size: 16px;
-    }
+        /* min-width: 300px; */
+    }   
 
     .icon-list {
         display: grid;
