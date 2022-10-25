@@ -313,6 +313,10 @@ footer a:hover {
         max-width: 200px;
     }
 
+    .Main-text {
+        font-size: 14px;
+    }
+
     .header-img {
         max-width: 150px;
         max-height: 150px;
@@ -404,6 +408,10 @@ footer a:hover {
 
     .Main-img {
         max-width: 400px;
+    }
+
+    .Main-text {
+        font-size: 18px;
     }
 
     aside {
