@@ -525,6 +525,10 @@ footer a {
         grid-column: 1/2;
     }
 
+    .icon-list a {
+        font-size: 10px;
+    }
+
     footer {
         color: black;
         display: grid;
